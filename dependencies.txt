@@ -1,0 +1,7 @@
+Polars: For efficient data manipulation and reading CSV files.
+
+SQLAlchemy: ORM for database interactions
+
+PostgreSQL Driver (): To connect and operate with PostgreSQL.
+
+pyarrow, pandas

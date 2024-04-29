@@ -1,0 +1,15 @@
+
+The dataset includes the following columns:
+
+1/ item_id: The identifier for each item.
+2/ quantity: The quantity of the item transacted (negative values likely indicate items being shipped out).
+3/ date_production_start: The start date of the item's production (appears to have many missing values).
+4/ date_received_into_inventory: The date the item was received into inventory (also has many missing values).
+5/ date_shipped_from_inventory: The date the item was shipped from inventory.
+
+Data Observations
+1/ There are many missing values in the date_production_start and date_received_into_inventory columns, which might not be necessary for tracking inventory balances but could be useful for detailed inventory analysis.
+2/ The date_shipped_from_inventory will likely be crucial for determining when items leave the inventory, affecting the balance.
+
+Database Design
+We need to create a PostgreSQL database schema based on this structure.
