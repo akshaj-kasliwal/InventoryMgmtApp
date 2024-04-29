@@ -10,10 +10,15 @@ document.getElementById("balance-form").addEventListener("submit", async functio
 
     // Check for an error response
     if (response.status !== 200) {
-        document.getElementById("balance-result").innerHTML = `<p>Error: ${data.detail}</p>`;
+        document.getElementById("balance-details").innerHTML = `<p>Error: ${data.detail}</p>`;
         return;
     }
 
     // Display balance details
-    document.getElementById("balance-details").innerHTML = `<p>Item ID: ${data.item_id}</p><p>Balance: ${data.balance}</p>`;
+    const resultHtml = `<div>
+                          <p>Item ID: ${data.item_id}</p>
+                          <p>Balance: ${data.balance}</p>
+                        </div>`;
+   document.getElementById("balance-result").innerHTML = resultHtml;  // Insert HTML content
+
 });
