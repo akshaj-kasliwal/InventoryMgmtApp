@@ -1,3 +1,4 @@
+![image](https://github.com/akshaj-kasliwal/InventoryMgmtApp/assets/71369241/5af173fd-d590-44c3-ab27-54a89178f442)
 
 ![image](https://github.com/akshaj-kasliwal/InventoryMgmtApp/assets/71369241/c995d992-d03f-4c1d-b1bb-a72e9c112112)
 
