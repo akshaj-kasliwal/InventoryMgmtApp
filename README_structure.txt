@@ -3,6 +3,19 @@
 1/ Run Models.py to setup the postgress tbale in postgres database
 2/ After the database is set up, run the data_loader.py script to load the data:
     Use correct raw data path in the inpout
+    Once pushed to the db check with following command in sql terminal
+        SELECT * FROM inventory_items LIMIT 10;
+
+3/ Start Fast PAI server uvicorn backend.api.main:app --reload
+    You should see something like below ::
+        INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+        INFO:     Started reloader process [3092] using StatReload
+        INFO:     Started server process [11952]
+        INFO:     Waiting for application startup.
+        INFO:     Application startup complete.
+
+4/ Once done check working of fastAPI like : http://localhost:8000/inventory/1/balance
+        You should see something like:  {"item_id":1,"balance":-27465.0}
 
 
 # Key Components

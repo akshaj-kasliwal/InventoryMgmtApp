@@ -5,3 +5,7 @@ SQLAlchemy: ORM for database interactions
 PostgreSQL Driver (): To connect and operate with PostgreSQL.
 
 pyarrow, pandas
+
+fastapi,uvicorn
+
+Jinja2Templates, jinja2

@@ -1,0 +1,21 @@
+<!-- frontend/templates/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Tracker</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Inventory Tracker</h1>
+    <form id="balance-form">
+        <label for="item-id">Enter Item ID:</label>
+        <input type="number" id="item-id" name="item-id" required>
+        <button type="submit">Check Balance</button>
+    </form>
+
+    <div id="balance-result"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

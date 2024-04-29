@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
-class InventoryItem(Base):
+class InventoryTransaction(Base):
     __tablename__ = 'inventory_items'
 
     id = Column(Integer, primary_key=True, autoincrement=True)

@@ -3,7 +3,7 @@
 import polars as pl
 from sqlalchemy.orm import Session
 from datetime import datetime
-from backend.Models.models import InventoryItem, Session  # Ensure correct import path
+from backend.Models.models import InventoryTransaction, Session  # Ensure correct import path
 
 def validate_and_transform_row(row):
     # Handles 'NULL' values and converts date strings to datetime objects if not 'NULL'
@@ -32,7 +32,7 @@ def load_data_to_db(csv_file_path):
 
     for index, row in df_pandas.iterrows():
         validated_row = validate_and_transform_row(row)
-        item = InventoryItem(
+        item = InventoryTransaction(
             item_id=validated_row['item_id'],
             quantity=validated_row['quantity'],
             date_production_start=validated_row['date_production_start'],
