@@ -1,0 +1,50 @@
+/* frontend/static/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #1e88e5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 1.1em;
+}
+
+input, button {
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1e88e5;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+#balance-result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+p {
+    margin: 10px 0;
+}

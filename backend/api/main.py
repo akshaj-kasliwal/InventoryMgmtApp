@@ -3,6 +3,7 @@
 from fastapi import FastAPI, Request, Depends, HTTPException
 from sqlalchemy.orm import Session
 from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
 
 from backend.config.dependencies import get_db
 from backend.services.query import get_item_balance
@@ -10,6 +11,8 @@ from backend.services.query import get_item_balance
 app = FastAPI()
 
 templates = Jinja2Templates(directory="frontend/templates")
+# Serve static files
+app.mount("/static", StaticFiles(directory="frontend/static"), name="static")
 
 @app.get("/")
 def index(request: Request):

@@ -15,5 +15,5 @@ document.getElementById("balance-form").addEventListener("submit", async functio
     }
 
     // Display balance details
-    document.getElementById("balance-result").innerHTML = `<p>Item ID: ${data.item_id}</p><p>Balance: ${data.balance}</p>`;
+    document.getElementById("balance-details").innerHTML = `<p>Item ID: ${data.item_id}</p><p>Balance: ${data.balance}</p>`;
 });
